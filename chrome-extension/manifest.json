@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "SecurePass+",
+    "version": "1.0",
+    "description": "Analyze and generate strong passwords for better security.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["clipboardWrite"]
+  }

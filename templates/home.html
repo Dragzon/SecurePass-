@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security Analyzer</title>
+    <link rel="stylesheet" href="../scripts/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SecurePass+</div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>SecurePass+</h1>
+        <p>Enhancing Security by Evaluating Password Strength & Detecting Vulnerabilities</p>
+    </div>
+
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Password Strength Checker</h3>
+                <p>Analyze your password and get real-time feedback on strength.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Breach Detection</h3>
+                <p>Check if your password has been exposed in any data breaches.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Password Expiry Notification</h3>
+                <p>Get reminders when it's time to update your password for security.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Security Tips</h3>
+                <p>Receive best practices for maintaining strong passwords.</p>
+            </div>
+        </div>
+        <a href="{{ url_for('analyze') }}" class="start-link">Start Analysis</a>
+    </div>
+</body>
+</html>

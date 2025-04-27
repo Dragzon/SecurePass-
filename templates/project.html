@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security Analyzer</title>
+    <link rel="stylesheet" href="../scripts/project.css">
+    <script src="../scripts/analyzer.js" defer></script>
+</head>
+<body>
+    <div class="hero">
+        <h1>SecurePass+</h1>
+        <p>Analyze your password's strength and security risks.</p>
+    </div>
+
+    <div class="container">
+        <h2>Enter Your Password</h2>
+        <input type="password" id="password" placeholder="Enter password..." autofocus>
+        <p id="strength-meter">Strength: </p>
+        <p id="security-tips"></p>
+        
+        <button id="breach-check">Check for Breaches</button>
+        
+        <p id="breach-message"></p>
+        
+        <div id="suggested-password" class="hidden">
+            <p><strong>⚡ Suggested Strong Password:</strong> <span id="generated-password"></span></p>
+        </div>
+
+        <br>
+        <a href="{{ url_for('home') }}" class="start-link">Back to Home</a>
+    </div>
+</body>
+</html>

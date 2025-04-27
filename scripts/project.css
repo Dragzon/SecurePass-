@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #121212;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00b0ff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container Section */
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* Password Input */
+#password {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+#password:focus {
+    outline: none;
+    border-color: #00b0ff;
+    box-shadow: 0 0 8px rgba(0, 176, 255, 0.3);
+}
+
+/* Strength Meter and Security Tips */
+#strength-meter {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #00b0ff;
+    margin-bottom: 1rem;
+}
+
+#security-tips {
+    font-size: 1rem;
+    color: #b0b0b0;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Breach Check Button */
+#breach-check {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: #00b0ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#breach-check:hover {
+    background: #0088cc;
+    transform: scale(1.05);
+}
+
+#breach-check:active {
+    transform: scale(0.95);
+}
+
+/* Breach Message */
+#breach-message {
+    font-size: 1rem;
+    color: #ff5555;
+    margin: 1.5rem 0;
+    min-height: 1.5rem;
+}
+
+/* Suggested Password Section */
+#suggested-password {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+#suggested-password p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+#generated-password {
+    color: #00ff88;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Back to Home Link */
+.container a {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #00b0ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #0088cc;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1.75rem;
+    }
+
+    #password {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    #breach-check {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+        margin: 2rem auto;
+    }
+
+    #suggested-password {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>SecurePass+</h1>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" id="analyze-tab">🔍 Analyze</button>
+        <button class="tab" id="generate-tab">🔑 Generate</button>
+    </div>
+
+    <div class="content">
+        <!-- Password Strength Analyzer -->
+        <div class="section" id="analyze-section">
+            <h2>Password Strength</h2>
+            <input type="text" id="password-input" placeholder="Enter password">
+            <button id="analyze-btn">Analyze</button>
+            <p id="analysis-result"></p>
+        </div>
+
+        <!-- Password Generator -->
+        <div class="section hidden" id="generate-section">
+            <h2>Generate Secure Password</h2>
+            <button id="generate-btn">Generate</button>
+            <div class="password-display">
+                <span id="generated-password"></span>
+                <button id="copy-btn">📋 Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="analyzer.js"></script>
+    <script src="generator.js"></script>
+</body>
+</html>
