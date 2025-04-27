@@ -1,2 +1,4 @@
 # SecurePass-
-Securepass+ is a robust and user-friendly tool designed to enhance password security and streamline authentication. Built with privacy and performance in mind, it empowers users to securely manage credentials, protect sensitive data, and simplify access across platforms. Ideal for individuals and teams seeking a reliable solution for secure authentication.
+SecurePass+ is an all-in-one Chrome extension and web tool that helps users strengthen and protect their passwords.
+It analyzes password strength, checks for breaches, notifies users to update old passwords.
+Built to promote better cybersecurity habits with real-time protection and smart alerts.
